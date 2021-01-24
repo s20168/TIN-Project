@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme Generator</title>
+</head>
+
+<body>
+    <header>
+        <p class="MemeTitle">MEME GENERATOR</p>
+    </header>
+    <div class="memeGenerator">
+        <div class="column">
+            <div class="card">
+                <br>
+                <div>
+                    <h1>TOGGLE DARK MODE</h1>
+                    <button class="myButton" onclick="DarkMode()">CLICK</button>
+                </div>
+                <br>
+                <h1>MEME GENERATOR</h1>
+                <br>
+                <div>
+                    <input type="file" id="chooseImage" accept="image/*">
+                </div>
+                <br>
+                <div>
+                    <textarea id="topText" placeholder="Put your top text here"></textarea>
+                    Text size: <input type="range" id="topSize" min="0.05" max="0.25" value="0.15" step="0.01">
+                </div>
+                <div>
+                    <textarea id="bottomText" placeholder="Put your bottom text here"></textarea>
+                    Text size: <input type="range" id="bottomSize" min="0.05" max="0.25" value="0.15" step="0.01">
+                </div>
+                <br>
+                <div>
+                    <button class="myButton" id="generateButton">GENERATE</button>
+                </div>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="card">
+                <br>
+                <canvas id="meme"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

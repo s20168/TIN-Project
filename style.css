@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.myButton {
+    box-shadow: inset 0px 0px 0px 0px #494949;
+    background: linear-gradient(to bottom, #f03636 5%, #3661f0 100%);
+    background-color: #f03636;
+    border-radius: 3px;
+    border: 2px solid #4f413e;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-family: Arial;
+    font-size: 2vw;
+    padding: 3px 40px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #29290e;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, gold 5%, #f03636 100%);
+    background-color: #4f413e;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: black;
+}
+
+h1 {
+    justify-content: center;
+    -webkit-text-stroke: 1px black;
+    color: rgb(240, 54, 54);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 4vw;
+}
+
+.MemeTitle {
+    display: flex;
+    justify-content: center;
+    color: transparent;
+    -webkit-text-stroke: 4px gold;
+    font-size: 10vw;
+    font-family: 'Hind Siliguri', sans-serif;
+    text-shadow: 0px 0px rgb(240, 54, 54);
+    transition: all .4s;
+}
+
+.MemeTitle:hover {
+    text-shadow: 12px 12px rgb(240, 54, 54), 17px 17px rgb(54, 97, 240), 22px 22px 50px rgb(73, 73, 73);
+}
+
+#meme {
+    width: 450px;
+}
+
+/* Float two columns side by side */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column2 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(120, 120, 120, 0.6);
+    padding: 8px;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 70vh;
+
+}
